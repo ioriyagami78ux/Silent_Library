@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Silent Library - Book Details</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { display: flex; align-items: center; background: #f4f4f4; padding: 10px; }
+    header img { height: 50px; margin-right: 15px; }
+    header h1 { flex: 1; text-align: center; margin: 0; }
+    header input[type="text"] { padding: 5px; }
+
+    nav { background: #333; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; }
+    nav ul li { position: relative; white-space: nowrap; } /* keep items in one line */
+    nav ul li a { display: block; padding: 10px 20px; color: white; text-decoration: none; }
+    nav ul li a:hover { background: #555; }
+    nav ul li ul { display: none; position: absolute; background: #444; list-style: none; padding: 0; margin: 0; }
+    nav ul li:hover ul { display: block; }
+    nav ul li ul li a { padding: 10px; display: block; }
+
+    /* Book details aligned like home/book list */
+    .book-details {
+      display: flex;
+      max-width: 900px;   /* same width as carousel/book list */
+      margin: 30px auto;  /* centered */
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .book-details img {
+      width: 250px;
+      height: auto;
+      border: 1px solid #ccc;
+      background: #eee;
+    }
+    .book-info { flex: 1; }
+    .book-info h2 { margin: 0 0 10px; }
+    .book-info h3 { margin: 0 0 15px; font-weight: normal; color: #555; }
+    .book-info p { line-height: 1.6; }
+
+    footer { background: #222; color: white; padding: 20px; text-align: center; margin-top: 40px; }
+    footer a { color: white; margin: 0 10px; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .social-icons img { height: 20px; margin: 0 5px; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="https://i.ytimg.com/vi/wTk-OA6rLK4/hqdefault.jpg" alt="Corporate Logo">
+    <h1>Silent Library</h1>
+    <input type="text" placeholder="Search">
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">Books</a>
+        <ul>
+          <li><a href="booklist.html">Book List</a></li>
+          <li><a href="bookdetails.html">Book Details</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Event</a></li>
+      <li>
+        <a href="#">About</a>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Book Details -->
+  <section class="book-details">
+    <img src="https://m.media-amazon.com/images/I/71XqqKTZz7L._AC_UF1000,1000_QL80_.jpg" alt="Harry Potter Cover">
+    <div class="book-info">
+      <h2>Harry Potter and the Sorcerer's Stone</h2>
+      <h3>by Rowling, J.K.</h3>
+      <p>
+        Harry Potter has never been the star of a Quidditch team, scoring points while riding a broom far above the ground. 
+        He knows no spells, has never helped to hatch a dragon, and has never worn a cloak of invisibility.
+      </p>
+      <p>
+        All he knows is a miserable life with the Dursleys, his horrible aunt and uncle, and their abominable son, Dudley — 
+        a great big swollen spoiled bully. Harry’s room is a tiny closet at the foot of the stairs, and he hasn’t had a birthday party in eleven years.
+      </p>
+      <p>
+        But all that is about to change when a mysterious letter arrives by owl messenger: a letter with an invitation to an incredible place 
+        that Harry — and anyone who reads about him — will find unforgettable.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+    </div>
+    <p>
+      <a href="index.html">Home</a> | 
+      <a href="#">Books</a> | 
+      <a href="booklist.html">Books List</a> | 
+      <a href="bookdetails.html">Book Details</a> | 
+      <a href="#">Events</a> | 
+      <a href="#">Contact Us</a> | 
+      <a href="#">Privacy Policy</a>
+    </p>
+  </footer>
+
+</body>
+</html>
